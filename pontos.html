@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pontos de Coleta</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+  <header>
+    <h1>Pontos de Coleta</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="problema.html"><i class="fas fa-exclamation-triangle"></i> O Problema</a></li>
+        <li><a href="importancia.html"><i class="fas fa-leaf"></i> Importancia</a></li>
+    </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <span>Digite o nome da sua cidade e veja os pontos de coletas disponíveis!</span>
+      <p></p>
+      <input type="text" id="busca" placeholder="Digite sua cidade...">
+      <button onclick="buscarPontos()">Buscar</button>
+      <ul id="resultado"></ul>
+      <div id="map"></div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
